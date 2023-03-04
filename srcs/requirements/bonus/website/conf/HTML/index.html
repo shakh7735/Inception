@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>INCEPTION</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Rosarivo&amp;subset=latin">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainershutterstock_32050237").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slideshutterstock_320502370": {
+    "bgimage" : "url('images/slideshutterstock_320502370.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_320502371": {
+    "bgimage" : "url('images/slideshutterstock_320502371.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_320502372": {
+    "bgimage" : "url('images/slideshutterstock_320502372.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_320502373": {
+    "bgimage" : "url('images/slideshutterstock_320502373.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_320502374": {
+    "bgimage" : "url('images/slideshutterstock_320502374.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_320502375": {
+    "bgimage" : "url('images/slideshutterstock_320502375.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_320502376": {
+    "bgimage" : "url('images/slideshutterstock_320502376.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorshutterstock_32050237"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { border-top-width:1px;border-top-style:dotted;border-top-color:#597282;margin-top: 10px;margin-bottom: 10px;  }
+.art-content .art-postcontent-0 .layout-item-1 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainershutterstock_32050237 {
+    position: relative;
+        width: 600px;
+    height: 406px;
+        }
+
+.default-responsive .art-header .art-slidecontainershutterstock_32050237,
+.responsive .art-header .art-slidecontainershutterstock_32050237
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainershutterstock_32050237 {
+  position: absolute !important;
+}
+
+.art-slidecontainershutterstock_32050237 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainershutterstock_32050237 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainershutterstock_32050237 .active, .art-slidecontainershutterstock_32050237 .next, .art-slidecontainershutterstock_32050237 .prev {
+    display: block;
+}
+
+.art-slidecontainershutterstock_32050237 .active {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_32050237 .next, .art-slidecontainershutterstock_32050237 .prev {
+    width: 100%;
+}
+
+.art-slidecontainershutterstock_32050237 .next.forward, .art-slidecontainershutterstock_32050237 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_32050237 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainershutterstock_32050237 .active.back {
+    opacity: 0;
+}
+
+
+.art-slideshutterstock_320502370 {
+    background-image:  url('images/slideshutterstock_320502370.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_320502370 {
+    background-image:  url('images/slideshutterstock_320502370.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_320502370 {
+    background-image:  url('images/slideshutterstock_320502370.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_320502370 {
+    background-image: url('images/slideshutterstock_320502370.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_320502370 {
+    background-image: url('images/slideshutterstock_320502370.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_320502371 {
+    background-image:  url('images/slideshutterstock_320502371.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_320502371 {
+    background-image:  url('images/slideshutterstock_320502371.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_320502371 {
+    background-image:  url('images/slideshutterstock_320502371.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_320502371 {
+    background-image: url('images/slideshutterstock_320502371.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_320502371 {
+    background-image: url('images/slideshutterstock_320502371.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_320502372 {
+    background-image:  url('images/slideshutterstock_320502372.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_320502372 {
+    background-image:  url('images/slideshutterstock_320502372.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_320502372 {
+    background-image:  url('images/slideshutterstock_320502372.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_320502372 {
+    background-image: url('images/slideshutterstock_320502372.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_320502372 {
+    background-image: url('images/slideshutterstock_320502372.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_320502373 {
+    background-image:  url('images/slideshutterstock_320502373.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_320502373 {
+    background-image:  url('images/slideshutterstock_320502373.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_320502373 {
+    background-image:  url('images/slideshutterstock_320502373.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_320502373 {
+    background-image: url('images/slideshutterstock_320502373.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_320502373 {
+    background-image: url('images/slideshutterstock_320502373.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_320502374 {
+    background-image:  url('images/slideshutterstock_320502374.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_320502374 {
+    background-image:  url('images/slideshutterstock_320502374.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_320502374 {
+    background-image:  url('images/slideshutterstock_320502374.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_320502374 {
+    background-image: url('images/slideshutterstock_320502374.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_320502374 {
+    background-image: url('images/slideshutterstock_320502374.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_320502375 {
+    background-image:  url('images/slideshutterstock_320502375.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_320502375 {
+    background-image:  url('images/slideshutterstock_320502375.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_320502375 {
+    background-image:  url('images/slideshutterstock_320502375.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_320502375 {
+    background-image: url('images/slideshutterstock_320502375.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_320502375 {
+    background-image: url('images/slideshutterstock_320502375.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_320502376 {
+    background-image:  url('images/slideshutterstock_320502376.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_320502376 {
+    background-image:  url('images/slideshutterstock_320502376.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_320502376 {
+    background-image:  url('images/slideshutterstock_320502376.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_320502376 {
+    background-image: url('images/slideshutterstock_320502376.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_320502376 {
+    background-image: url('images/slideshutterstock_320502376.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigatorshutterstock_32050237 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 101px;
+  left: 75%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorshutterstock_32050237
+{
+background: #899FAE;background: rgba(137, 159, 174, 0.7);background: rgba(137, 159, 174, 0.7);background: rgba(137, 159, 174, 0.7);background: rgba(137, 159, 174, 0.7);-svg-background: rgba(137, 159, 174, 0.7);background: rgba(137, 159, 174, 0.7);
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:10px;
+
+
+
+
+
+}
+.art-slidenavigatorshutterstock_32050237 > a
+{
+background: #465A67;background: #465A67;background: #465A67;background: #465A67;background: #465A67;-svg-background: #465A67;background: #465A67;
+-webkit-border-radius:10%;-moz-border-radius:10%;border-radius:10%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_32050237 > a.active
+{
+background: #34798D;background: #34798D;background: #34798D;background: #34798D;background: #34798D;-svg-background: #34798D;background: #34798D;
+-webkit-border-radius:10%;-moz-border-radius:10%;border-radius:10%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_32050237 > a:hover
+{
+background: #34798D;background: -webkit-linear-gradient(top, #3A859C 0, #3A859C 50%, #3A859C 60%, #2D697B 100%) no-repeat;background: -moz-linear-gradient(top, #3A859C 0, #3A859C 50%, #3A859C 60%, #2D697B 100%) no-repeat;background: -o-linear-gradient(top, #3A859C 0, #3A859C 50%, #3A859C 60%, #2D697B 100%) no-repeat;background: -ms-linear-gradient(top, #3A859C 0, #3A859C 50%, #3A859C 60%, #2D697B 100%) no-repeat;-svg-background: linear-gradient(top, #3A859C 0, #3A859C 50%, #3A859C 60%, #2D697B 100%) no-repeat;background: linear-gradient(to bottom, #3A859C 0, #3A859C 50%, #3A859C 60%, #2D697B 100%) no-repeat;
+-webkit-border-radius:10%;-moz-border-radius:10%;border-radius:10%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+    <div class="art-sheet clearfix">
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+<div class="art-slider art-slidecontainerheader" data-width="1100" data-height="200">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideheader0">
+
+<div class="art-textblock art-slideheader0-object2052004573">
+        <div class="art-slideheader0-object2052004573-text-container">
+        <div class="art-slideheader0-object2052004573-text"><p style="color: rgb(228, 233, 236); font-size: 23px; font-weight: bold; font-style: normal; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; ">INCEPTION PROJECT</p><p style="color: rgb(213, 221, 226); font-size: 14px; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; ">EDGAR SHAKHGELDYAN</p><p style="font-size:14px;font-family:'Goudy Bookletter 1911', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;text-decoration:none;letter-spacing:1px;text-transform:uppercase"><br></p></div>
+    </div>
+    
+</div>
+</div>
+<div class="art-slide-item art-slideheader1">
+
+<div class="art-textblock art-slideheader1-object1486034298">
+        <div class="art-slideheader1-object1486034298-text-container">
+        <div class="art-slideheader1-object1486034298-text"><p style="line-height: 28px; color: rgb(228, 233, 236); font-size: 23px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; ">INCEPTION PROJECT</p><p style="line-height: 17px; color: rgb(213, 221, 226); font-size: 14px; text-transform: uppercase; ">EDGAR SHAKHGELDYAN</p></div>
+    </div>
+    
+</div>
+</div>
+<div class="art-slide-item art-slideheader2">
+
+<div class="art-textblock art-slideheader2-object439374759">
+        <div class="art-slideheader2-object439374759-text-container">
+        <div class="art-slideheader2-object439374759-text"><p style="line-height: 28px; color: rgb(228, 233, 236); font-size: 23px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; ">INCEPTION PROJECT</p><p style="line-height: 17px; color: rgb(213, 221, 226); font-size: 14px; text-transform: uppercase; ">EDGAR SHAKHGELDYAN</p></div>
+    </div>
+    
+</div>
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorheader" data-left="1" data-top="0">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+
+
+
+
+                
+                    
+</header>
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="resume.html" class="active">Resume</a></li></ul> 
+    </nav>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                
+                                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 33%" >
+        <h3 style="border-bottom: 1px solid #597282; padding-bottom: 5px"><span style="font-family: Georgia;">Personal Info</span><br></h3><div class="image-caption-wrapper" style="width: 100%"><span style="font-family: Georgia;"><span style="font-size: 16px;">Date of Birth<br>10.11.1977<br><br>Marital status<br>Married<br><br>Address<br>Narek 1 15/1<br>Ashtarak, Armenia, 0084<br>Phone<br>(+374) 55 989 591</span><br></span></div><div class="image-caption-wrapper" style="width: 100%"><span style="font-family: Georgia;">E-mail &nbsp; &nbsp;&nbsp;shakh7735@gmail.com<br>Github &nbsp;</span> <span style="font-family: Arial;">&nbsp;</span><a href="https://github.com/shakh7735" style=" font-family: 'Lucida Sans Unicode';">https://github.com/shakh7735</a><span style="font-family: 'Lucida Sans Unicode';"></span><span style="font-family: Arial;"><a href="https://github.com/shakh7735" target="_self"></a></span><br><span style="font-size: 16px;"><br></span></div>
+    </div><div class="art-layout-cell layout-item-1" style="width: 67%" >
+        <h3 style="border-bottom: 1px solid #597282; padding-bottom: 5px"><br></h3><div class="image-caption-wrapper"><a href="resume.html"></a><div id="shutterstock_32050237" style="position: relative; display: inline-block; z-index: 0; margin: 10px;  border-style: solid; border-color: #597282; border-width: 1px;  " class="art-collage">
+<div class="art-slider art-slidecontainershutterstock_32050237" data-width="600" data-height="406">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideshutterstock_320502370" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_320502371" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_320502372" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_320502373" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_320502374" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_320502375" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_320502376" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorshutterstock_32050237" data-left="1" data-top="0.2688679">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        
+        </div>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout-br layout-item-0">
+</div><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 100%" >
+        <h3 style="border-bottom: 1px solid #597282; padding-bottom: 5px"><span style="font-family: 'Lucida Console';">Trainings and courses</span></h3><br><br><span style="font-family: 'Times New Roman';"><span style="font-size: 16px; font-weight: bold; font-style: italic; background-color: #E2341D;">2021-12-Current</span><br><span style="font-size: 18px;">Student of “42-Yerevan”<br>42 Yerevan is a programming school dedicated to educating the programmers of the future,<br>which is part of the EU-supported TUMO laboratories and is a member of the network<br>of programming schools in France, covering over than 30 cities around the world.<br>Finished projects in C:<br>libft (implementation of the C standard library);<br>get next line (special function for reading info from a file);<br>ft_printf (implementation of original C language function);<br>push_swap (stack sorting algorithm);<br>pipex (UNIX processes);<br>so_long (2D graphics game);<br>philosophers (UNIX threads and processes);<br>minishell (implementation of a UNIX shell (like BASH));<br>NetPractice (solving networking problems to make a network run);<br>cub3D (3D game, implemented using Ray-Casting algorithm);<br>Finished projects in C++:<br>CPPmodule (C++ class);<br>Ft_containers (STL containers, , implemented vector, stack, map and set containers, Red-Black tree, iterators)</span></span><span style="font-size: 18px;"><br></span><br><span style="font-family: Verdana;">*for details please visit</span> <a href="https://github.com/shakh7735" style=" font-family: 'Lucida Console';">https://github.com/shakh7735</a><span style="font-family: 'Lucida Sans Unicode';"></span><span style="font-family: Verdana;"><a href="https://github.com/shakh7735"></a></span><br><br><div style="margin-left: 2em">
+        </div><p><br></p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p>Copyright © 2023. All Rights Reserved.<br></p>
+</footer>
+
+</body></html>
